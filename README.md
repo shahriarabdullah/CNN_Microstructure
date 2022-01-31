@@ -43,14 +43,22 @@ CNN_Microstructure
 │       │   ...
 ```
 
+## RESULT
+* When fed with an unseen coarse grain microstructure, the output was-<br>
+![image](https://user-images.githubusercontent.com/12016642/151815678-e0584fe0-7785-4a72-93a0-5a1c084de7c6.png)
+* When fed with an unseen fine grain microstructure, the output was-<br>
+* ![image](https://user-images.githubusercontent.com/12016642/151815835-e6dec89a-b384-4640-bf5e-d27c168f9f4c.png)
+
+
+
 ## DETAILS
-This model was built with a view to distinguish coarse microstructure image from finer one. After starting the project, I realized there's not enough microstructure images (needed around 1000-4000 images) available for public use to train my model. So I decided to generate schematic coarse and fine microstructures using MicroStructPy, a python library. The train and test dataset was split into 6:1 ratio with very few images (28 images only). So the hyperparameters might change and the model might require tweaking if trained with actual data with a large dataset. (I've a plan to do that if I can manage/create an appropriate dataset). 
+This model was built with a view to distinguish coarse microstructure image from finer one. After starting the project, I realized there's not enough microstructure images (needed around 1000-4000 images) available for public use to train my model. So I decided to generate schematic coarse and fine microstructures using MicroStructPy, a python library. The train and test dataset was split into 10:3 ratio with very few images (78 images only). So the hyperparameters might change and the model might require tweaking if trained with actual data with a large dataset. (I've a plan to do that if I can manage/create an appropriate dataset). 
 All input images has dimension *432x288*. So while prediction, image of same size is required to be fed.
 
 * Hyperparameters were tuned by trial & error and continuous visualization.
 * Seed was set for reproducibility.
 * The loss curve (seed 45) is-<br>
- ![image](https://user-images.githubusercontent.com/12016642/151752310-1ed902e7-0c9d-4c69-986d-5c7454d44bf6.png)
+ ![image](https://user-images.githubusercontent.com/12016642/151816630-59be2927-96ee-438d-9f73-bb3d864d2d03.png)
 
 
 * The model summary - <br>
