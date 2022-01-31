@@ -5,6 +5,11 @@ A convolutional neural network (initially trained on schematic microstructure) b
 
 
 ## USAGE
+
+To run the model virtually, [Click here](https://github.com/shahriarabdullah/CNN_Microstructure/blob/main/GoogleColab/CNN_Microstructure_Final.ipynb). Open this in GoogleColab and you can run easily.
+
+If you are using a Windows machine, follow this-
+
 1. Train the model using
 ```bash
   python train.py
@@ -14,7 +19,7 @@ A convolutional neural network (initially trained on schematic microstructure) b
 ```bash
   python predict.py test_image.png
 ```
-NOTE: Image file should be in the same directory as the *predicty.py* and *trained_model.h5*). This is specifically designed to run on Windows machine.
+**NOTE:** Image file should be in the same directory as the *predicty.py* and *trained_model.h5*). This is specifically designed to run on Windows machine. 
 
 The directory structure should be as following-
 ```
