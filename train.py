@@ -5,7 +5,7 @@ import os
 import pandas as pd
 import cv2
 
-
+tf.random.set_seed(45)
 file_path = os.path.abspath(os.path.dirname(__file__)) #Gets current directory of the script
 train = tf.keras.preprocessing.image.ImageDataGenerator(rescale=1/255)
 test = tf.keras.preprocessing.image.ImageDataGenerator(rescale=1/255)
