@@ -1,6 +1,6 @@
 # CNN_Microstructure
 **Abdullah Shahriar**<br>
-**31.01.2022**<br><br>
+<br>
 A convolutional neural network (initially trained on schematic microstructure) built with TensorFlow to predict if the microstructure belongs to coarse or finer class.
 
 
