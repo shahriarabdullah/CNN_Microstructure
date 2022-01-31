@@ -53,8 +53,45 @@ All input images has dimension *432x288*. So while prediction, image of same siz
  ![image](https://user-images.githubusercontent.com/12016642/151752310-1ed902e7-0c9d-4c69-986d-5c7454d44bf6.png)
 
 
-* The model has the following structure -
-
+* The model summary - <br>
+```
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d_16 (Conv2D)          (None, 430, 286, 8)       224       
+                                                                 
+ max_pooling2d_16 (MaxPoolin  (None, 215, 143, 8)      0         
+ g2D)                                                            
+                                                                 
+ conv2d_17 (Conv2D)          (None, 213, 141, 16)      1168      
+                                                                 
+ max_pooling2d_17 (MaxPoolin  (None, 106, 70, 16)      0         
+ g2D)                                                            
+                                                                 
+ conv2d_18 (Conv2D)          (None, 104, 68, 32)       4640      
+                                                                 
+ max_pooling2d_18 (MaxPoolin  (None, 52, 34, 32)       0         
+ g2D)                                                            
+                                                                 
+ conv2d_19 (Conv2D)          (None, 50, 32, 32)        9248      
+                                                                 
+ max_pooling2d_19 (MaxPoolin  (None, 25, 16, 32)       0         
+ g2D)                                                            
+                                                                 
+ flatten_4 (Flatten)         (None, 12800)             0         
+                                                                 
+ dense_8 (Dense)             (None, 128)               1638528   
+                                                                 
+ dense_9 (Dense)             (None, 1)                 129       
+                                                                 
+=================================================================
+Total params: 1,653,937
+Trainable params: 1,653,937
+Non-trainable params: 0
+_________________________________________________________________
+```
+* Structure in graphical form <br><br>
 ![image](https://user-images.githubusercontent.com/12016642/151747008-2cab7dc7-ef86-4ecf-8a94-ec0a8b070eb6.png)
 
 
